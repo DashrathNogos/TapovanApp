@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC7FED121DB888330032D13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7FED111DB888330032D13A /* main.m */; };
+		CC7FED151DB888330032D13A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7FED141DB888330032D13A /* AppDelegate.m */; };
+		CC7FED181DB888330032D13A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7FED171DB888330032D13A /* ViewController.m */; };
+		CC7FED1B1DB888330032D13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7FED191DB888330032D13A /* Main.storyboard */; };
+		CC7FED1D1DB888330032D13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7FED1C1DB888330032D13A /* Assets.xcassets */; };
+		CC7FED201DB888330032D13A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7FED1E1DB888330032D13A /* LaunchScreen.storyboard */; };
+		CC7FED2B1DB888330032D13A /* TapovanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7FED2A1DB888330032D13A /* TapovanTests.m */; };
+		CC7FED361DB888330032D13A /* TapovanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7FED351DB888330032D13A /* TapovanUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC7FED271DB888330032D13A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7FED051DB888330032D13A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7FED0C1DB888330032D13A;
+			remoteInfo = Tapovan;
+		};
+		CC7FED321DB888330032D13A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7FED051DB888330032D13A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7FED0C1DB888330032D13A;
+			remoteInfo = Tapovan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC7FED0D1DB888330032D13A /* Tapovan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tapovan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7FED111DB888330032D13A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC7FED131DB888330032D13A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC7FED141DB888330032D13A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC7FED161DB888330032D13A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC7FED171DB888330032D13A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC7FED1A1DB888330032D13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC7FED1C1DB888330032D13A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC7FED1F1DB888330032D13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC7FED211DB888330032D13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7FED261DB888330032D13A /* TapovanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapovanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7FED2A1DB888330032D13A /* TapovanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapovanTests.m; sourceTree = "<group>"; };
+		CC7FED2C1DB888330032D13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7FED311DB888330032D13A /* TapovanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapovanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7FED351DB888330032D13A /* TapovanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapovanUITests.m; sourceTree = "<group>"; };
+		CC7FED371DB888330032D13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC7FED0A1DB888330032D13A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7FED231DB888330032D13A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7FED2E1DB888330032D13A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC7FED041DB888330032D13A = {
+			isa = PBXGroup;
+			children = (
+				CC7FED0F1DB888330032D13A /* Tapovan */,
+				CC7FED291DB888330032D13A /* TapovanTests */,
+				CC7FED341DB888330032D13A /* TapovanUITests */,
+				CC7FED0E1DB888330032D13A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC7FED0E1DB888330032D13A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FED0D1DB888330032D13A /* Tapovan.app */,
+				CC7FED261DB888330032D13A /* TapovanTests.xctest */,
+				CC7FED311DB888330032D13A /* TapovanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC7FED0F1DB888330032D13A /* Tapovan */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FED131DB888330032D13A /* AppDelegate.h */,
+				CC7FED141DB888330032D13A /* AppDelegate.m */,
+				CC7FED161DB888330032D13A /* ViewController.h */,
+				CC7FED171DB888330032D13A /* ViewController.m */,
+				CC7FED191DB888330032D13A /* Main.storyboard */,
+				CC7FED1C1DB888330032D13A /* Assets.xcassets */,
+				CC7FED1E1DB888330032D13A /* LaunchScreen.storyboard */,
+				CC7FED211DB888330032D13A /* Info.plist */,
+				CC7FED101DB888330032D13A /* Supporting Files */,
+			);
+			path = Tapovan;
+			sourceTree = "<group>";
+		};
+		CC7FED101DB888330032D13A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FED111DB888330032D13A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC7FED291DB888330032D13A /* TapovanTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FED2A1DB888330032D13A /* TapovanTests.m */,
+				CC7FED2C1DB888330032D13A /* Info.plist */,
+			);
+			path = TapovanTests;
+			sourceTree = "<group>";
+		};
+		CC7FED341DB888330032D13A /* TapovanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FED351DB888330032D13A /* TapovanUITests.m */,
+				CC7FED371DB888330032D13A /* Info.plist */,
+			);
+			path = TapovanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC7FED0C1DB888330032D13A /* Tapovan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7FED3A1DB888330032D13A /* Build configuration list for PBXNativeTarget "Tapovan" */;
+			buildPhases = (
+				CC7FED091DB888330032D13A /* Sources */,
+				CC7FED0A1DB888330032D13A /* Frameworks */,
+				CC7FED0B1DB888330032D13A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tapovan;
+			productName = Tapovan;
+			productReference = CC7FED0D1DB888330032D13A /* Tapovan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC7FED251DB888330032D13A /* TapovanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7FED3D1DB888330032D13A /* Build configuration list for PBXNativeTarget "TapovanTests" */;
+			buildPhases = (
+				CC7FED221DB888330032D13A /* Sources */,
+				CC7FED231DB888330032D13A /* Frameworks */,
+				CC7FED241DB888330032D13A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7FED281DB888330032D13A /* PBXTargetDependency */,
+			);
+			name = TapovanTests;
+			productName = TapovanTests;
+			productReference = CC7FED261DB888330032D13A /* TapovanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC7FED301DB888330032D13A /* TapovanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7FED401DB888330032D13A /* Build configuration list for PBXNativeTarget "TapovanUITests" */;
+			buildPhases = (
+				CC7FED2D1DB888330032D13A /* Sources */,
+				CC7FED2E1DB888330032D13A /* Frameworks */,
+				CC7FED2F1DB888330032D13A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7FED331DB888330032D13A /* PBXTargetDependency */,
+			);
+			name = TapovanUITests;
+			productName = TapovanUITests;
+			productReference = CC7FED311DB888330032D13A /* TapovanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC7FED051DB888330032D13A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jimit Bagadiya";
+				TargetAttributes = {
+					CC7FED0C1DB888330032D13A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					CC7FED251DB888330032D13A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC7FED0C1DB888330032D13A;
+					};
+					CC7FED301DB888330032D13A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC7FED0C1DB888330032D13A;
+					};
+				};
+			};
+			buildConfigurationList = CC7FED081DB888330032D13A /* Build configuration list for PBXProject "Tapovan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC7FED041DB888330032D13A;
+			productRefGroup = CC7FED0E1DB888330032D13A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC7FED0C1DB888330032D13A /* Tapovan */,
+				CC7FED251DB888330032D13A /* TapovanTests */,
+				CC7FED301DB888330032D13A /* TapovanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC7FED0B1DB888330032D13A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7FED201DB888330032D13A /* LaunchScreen.storyboard in Resources */,
+				CC7FED1D1DB888330032D13A /* Assets.xcassets in Resources */,
+				CC7FED1B1DB888330032D13A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7FED241DB888330032D13A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7FED2F1DB888330032D13A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC7FED091DB888330032D13A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7FED181DB888330032D13A /* ViewController.m in Sources */,
+				CC7FED151DB888330032D13A /* AppDelegate.m in Sources */,
+				CC7FED121DB888330032D13A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7FED221DB888330032D13A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7FED2B1DB888330032D13A /* TapovanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7FED2D1DB888330032D13A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7FED361DB888330032D13A /* TapovanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC7FED281DB888330032D13A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7FED0C1DB888330032D13A /* Tapovan */;
+			targetProxy = CC7FED271DB888330032D13A /* PBXContainerItemProxy */;
+		};
+		CC7FED331DB888330032D13A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7FED0C1DB888330032D13A /* Tapovan */;
+			targetProxy = CC7FED321DB888330032D13A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC7FED191DB888330032D13A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC7FED1A1DB888330032D13A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC7FED1E1DB888330032D13A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC7FED1F1DB888330032D13A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC7FED381DB888330032D13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC7FED391DB888330032D13A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC7FED3B1DB888330032D13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tapovan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeglance.Tapovan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC7FED3C1DB888330032D13A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tapovan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeglance.Tapovan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC7FED3E1DB888330032D13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapovanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeglance.TapovanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tapovan.app/Tapovan";
+			};
+			name = Debug;
+		};
+		CC7FED3F1DB888330032D13A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapovanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeglance.TapovanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tapovan.app/Tapovan";
+			};
+			name = Release;
+		};
+		CC7FED411DB888330032D13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TapovanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeglance.TapovanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tapovan;
+			};
+			name = Debug;
+		};
+		CC7FED421DB888330032D13A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TapovanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeglance.TapovanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tapovan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC7FED081DB888330032D13A /* Build configuration list for PBXProject "Tapovan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7FED381DB888330032D13A /* Debug */,
+				CC7FED391DB888330032D13A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7FED3A1DB888330032D13A /* Build configuration list for PBXNativeTarget "Tapovan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7FED3B1DB888330032D13A /* Debug */,
+				CC7FED3C1DB888330032D13A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC7FED3D1DB888330032D13A /* Build configuration list for PBXNativeTarget "TapovanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7FED3E1DB888330032D13A /* Debug */,
+				CC7FED3F1DB888330032D13A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC7FED401DB888330032D13A /* Build configuration list for PBXNativeTarget "TapovanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7FED411DB888330032D13A /* Debug */,
+				CC7FED421DB888330032D13A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC7FED051DB888330032D13A /* Project object */;
+}
