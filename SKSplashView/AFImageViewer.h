@@ -24,6 +24,7 @@
 @property (nonatomic) UIViewContentMode contentMode;
 
 @property (nonatomic, weak) id<AFImageViewerDelegate> delegate;
+@property (strong, nonatomic) UIPageControl *pageControl;
 
 -(void) setCustomPageControl:(UIPageControl *) customPageControl;
 

@@ -12,7 +12,6 @@
 
 @property (strong, nonatomic) UIScrollView *imageScrollView;
 @property (nonatomic, strong) NSMutableArray *viewControllers;
-@property (strong, nonatomic) UIPageControl *pageControl;
 @property (strong, nonatomic) NSMutableDictionary *downloadedImages;
 
 -(CGRect) imageViewFrame;
@@ -52,6 +51,11 @@
     self.pageControl = customPageControl;
     self.pageControl.numberOfPages = self.nb;
     self.pageControl.currentPage = currentPage;
+    //_pageControl.backgroundColor=[UIColor redColor];
+    _pageControl.pageIndicatorTintColor = [UIColor redColor];
+//    _pageControl.currentPageIndicatorTintColor = [UIColor greenColor];
+//    _pageControl.tintColor=[UIColor blackColor];
+    
 }
 
 -(UIViewContentMode) contentMode
@@ -159,7 +163,7 @@
 }
 
 -(void)initialize
-{    
+{
     self.imageScrollView = [[UIScrollView alloc] initWithFrame:[self imageViewFrame]];
     self.pageControl = [[UIPageControl alloc] initWithFrame:[self pageControlFrame]];
     [self addSubview:self.imageScrollView];

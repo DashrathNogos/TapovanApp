@@ -196,7 +196,7 @@
 }
 
 - (UIColor *)tabColor {
-    return [UIColor blueColor];
+    return [UIColor colorWithRed:242.0/255.0 green:174.0/255.0 blue:78.0/255.0 alpha:1.0];
 }
 
 -(UIColor *)tabBackgroundColor {
@@ -230,6 +230,12 @@
 #pragma mark - Pay Now Related Methods
 
 - (IBAction)btnClickedPayNow:(id)sender {
+    
+
+    UIAlertView *altPayU=[[UIAlertView alloc]initWithTitle:@"PayU" message:@"No payment methods available. Try Again Later." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    
+    //[altPayU show];
+    
     [self payNow];
 }
 -(void)payNow{
@@ -262,6 +268,11 @@
         NSDictionary *dict = [self getNSURLRequestWithPaymentParams:paymentParam2 andPaymentType:paymentType];
         request = [dict objectForKey:KEY_REQUEST];
         postParam = [dict objectForKey:KEY_POST_PARAM];
+        //api call
+        strUserData=postParam;
+        //NSLog(@"%@",strUserData);
+       // [self PaymentApiSave];
+        
     }
     
     if (request) {
@@ -319,12 +330,44 @@
         
     }
 }
+//Serverside save data
 
+-(void)PaymentApiSave{
+    appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
+
+    strToken= [appDelegate.user stringForKey:@"firstName"];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];//school
+    NSDictionary *params = @{@"paymentlog_data": strUserData,@"access_token": strToken};
+    
+    [manager POST:@"http://192.168.1.13/mobapi/paymentlog" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+//        getTitle=[responseObject valueForKey:@"title"];
+//        getimg=[responseObject valueForKey:@"gallery_data"];
+//        getVideo=[responseObject valueForKey:@"video_data"];
+//        getDesc=[responseObject valueForKey:@"short_desc"];
+//        arrType=[responseObject valueForKey:@"activity_type"];
+//        arrType=[responseObject valueForKey:@"activity_type"];
+//        getDate=[responseObject valueForKey:@"created_on"];
+        
+        //getVideo=[NSMutableArray arrayWithObjects:@"p7OyciHjfT0", nil];
+        
+        
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+ 
+}
 -(void)enablePayNow:(NSNotification *) noti{
     if ([noti object]) {
         paymentParam2 = (PayUModelPaymentParams *)[noti object];
         self.btnPayNow.userInteractionEnabled = YES;
-        [self.btnPayNow setBackgroundColor:[UIColor blueColor]];
+       // [self.btnPayNow setBackgroundColor:[UIColor blueColor]];
+        
+        [self.btnPayNow setBackgroundColor:[UIColor colorWithRed:59.0/255.0 green:88.0/255.0 blue:151.0/255.0 alpha:1.0]];
+
         if ([noti.userInfo objectForKey:kPUUIPayNow]) {
             [self payNow];
         }
@@ -333,7 +376,11 @@
         paymentParam2 = nil;
         self.btnPayNow.userInteractionEnabled = NO;
         [self.btnPayNow setBackgroundColor:[UIColor payNowDisableColor]];
-//        self.btnPayNow.alpha = ALPHA_HALF;
+//        
+//        [self.btnPayNow setBackgroundColor:[UIColor colorWithRed:200.0/255.0 green:175.0/255.0 blue:200.0/255.0 alpha:1.0]];
+//          [self.btnPayNow setBackgroundColor:[UIColor colorWithRed:59.0/255.0 green:69.0/255.0 blue:211.0/255.0 alpha:0.4]];
+
+        //        self.btnPayNow.alpha = ALPHA_HALF;
     }
 }
 
@@ -396,7 +443,8 @@
         [self dismissViewControllerAnimated:NO completion:nil];
     }
     else if (self.navigationController) {
-        [self.navigationController popToRootViewControllerAnimated:NO];
+        [self.navigationController popViewControllerAnimated:YES];
+        //[self.navigationController popToRootViewControllerAnimated:NO];
     }
 }
 

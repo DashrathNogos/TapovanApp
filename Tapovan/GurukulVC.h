@@ -11,7 +11,6 @@
 #import "TitleGurukulCell.h"
 #import "MultipleImageCell.h"
 #import "VideoGurukulCell.h"
-#import "ModelCell.h"
 #import "YTPlayerView.h"
 #import "AppDelegate.h"
 #import "ImageDetailVC.h"

@@ -8,8 +8,15 @@
 
 #import "PUUIWrapperKHTabPagerVC.h"
 #import "PUUIWrapperPayUSDK.h"
+#import "AppDelegate.h"
+#import "AFHTTPRequestOperationManager.h"
 
 @interface PUUIPaymentOptionVC : PUUIWrapperKHTabPagerVC
+{
+    NSString *strToken,*strUserData;
+    AppDelegate *appDelegate;
+    
+}
 
 @property (nonatomic, strong) PayUModelPaymentParams *paymentParam;
 @property (nonatomic, strong) PayUModelPaymentRelatedDetail *paymentRelatedDetail;

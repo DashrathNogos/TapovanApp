@@ -70,12 +70,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.navigationController.navigationBar.backgroundColor=[UIColor colorWithRed:242.0/255 green:174.0/255 blue:78.0/255 alpha:1];
+
     self.navigationController.navigationBar.hidden=NO;
-    UINavigationBar *bar = [self.navigationController navigationBar];
+    self.navigationController.navigationBar.barStyle  = UIBarStyleBlackOpaque;
+    self.navigationController.navigationBar.barTintColor =[UIColor colorWithRed:242.0/255.0 green:174.0/255.0 blue:78.0/255.0 alpha:1];
+    self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
+    
+    //self.navigationController.navigationBar.alpha=1;
+    //self.navigationController.navigationBar.translucent=YES;
+    
+    
+//    self.navigationController.navigationBar.translucent=NO;
+//    self.navigationController.navigationBar.alpha=1.0;
+    
+
     //[bar setTintColor:[UIColor redColor]];
-    [bar setBackgroundColor:[UIColor colorWithRed:242.0/255 green:174.0/255 blue:78.0/255 alpha:5]];
-    bar.alpha=5.0;
+    
+//    [bar setBackgroundColor:[UIColor redColor]];
+//    bar.alpha=1.0;
+
+    //bar.alpha=5.0;
     
     [self configureTextFieldDelegate];
     [self dismissKeyboardOnTapOutsideTextField];
@@ -122,6 +136,8 @@
     SDKValidations = [PayUValidations new];
     
     self.viewCardDetail.layer.borderColor = [UIColor payUViewBorderColor].CGColor;
+    self.vwStoredCardNameSection.layer.borderColor = [UIColor payUViewBorderColor].CGColor;
+
     [self.lblHorizontalLine1 setBackgroundColor:[UIColor payUViewBorderColor]];
     [self.lblHorizontalLine2 setBackgroundColor:[UIColor payUViewBorderColor]];
     [self.lblHorizontalLine3 setBackgroundColor:[UIColor payUViewBorderColor]];

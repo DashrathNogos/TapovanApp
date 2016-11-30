@@ -10,7 +10,7 @@
 
 #define BUTTON_HEIGHT_WIDTH 45
 #define BUTTON_BOTTOM_PADDING 10
-#define BUTTON_TOP_PADDING 0
+#define BUTTON_TOP_PADDING 7
 
 @interface PUUINBTopView()
 

@@ -32,7 +32,7 @@
 //PayNow Disable color
 +(UIColor *)payNowDisableColor
 {
-    return [UIColor colorWithRed:230.0f/255.0f green:230.0f/255.0f blue:231.0f/255.0f alpha:1];
+    return [UIColor colorWithRed:200.0f/255.0f green:230.0f/255.0f blue:231.0f/255.0f alpha:1];
 }
 
 //PayU viewBorderColor and seperator line color
