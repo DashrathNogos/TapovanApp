@@ -4,7 +4,7 @@
 //
 //  Created by Jimit Bagadiya on 20/10/16.
 //  Copyright © 2016 Jimit Bagadiya. All rights reserved.
-//
+//com.creativeglance.Tapovan
 
 #import "AppDelegate.h"
 
@@ -13,13 +13,127 @@
 @end
 
 @implementation AppDelegate
+@synthesize strTocken,strEmail,strMobile,strName,strImg;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+  
+    strTocken=[[NSMutableString alloc]init];
+    strEmail=[[NSMutableString alloc]init];
+    strMobile=[[NSMutableString alloc]init];
+    strName=[[NSMutableString alloc]init];
+    strImg=[[NSMutableString alloc]init];
+
+    _user = [NSUserDefaults standardUserDefaults];
+
+   // NSString *firstName = [_user objectForKey:@"firstName"];
+    [_user synchronize];
+   
+//    UIImageView *splashImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_Height)];
+//    [splashImage setImage: [UIImage imageNamed:@"logo.png"]];
+////    [self.window addSubview:splashImage];
+////    [self.window bringSubviewToFront:splashImage];
+//    
+//    //2. set an anchor point on the image view so it opens from the left
+//   // splashImage.layer.anchorPoint = CGPointMake(0, 0.5);
+//    
+//    //reset the image view frame
+//    splashImage.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_Height);
+//    
+//    [self.window.rootViewController.view addSubview:splashImage];
+//    [self.window.rootViewController.view bringSubviewToFront:splashImage];
+//    
+//    PKWaitDelay(2,{
+//        [UIView transitionWithView:self.window
+//                          duration:3.00f
+//                           options:UIViewAnimationCurveEaseInOut
+//                        animations:^(void){
+//                            splashImage.alpha = 0.0f;
+//                           
+//                            
+//
+//                        }
+//                        completion:^(BOOL finished){
+//                            NSLog(@"%@",[_user stringForKey:@"firstName"]);
+//                            NSString *strLogin=[_user stringForKey:@"firstName"];
+//                            if( strLogin== (id)[NSNull null] ||[strLogin isEqualToString:@""]||strLogin==nil)
+//                                //if ([[_user objectForKey:@"firstName"] isEqualToString:@""])
+//                            {
+//                                NSString *storyboardId =@"ViewController";
+//                                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//                                UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+//                                
+//                                UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:initViewController];
+//                                
+//                                self.window.rootViewController = navController;
+//                                [self.window makeKeyAndVisible];
+//                                
+//                                
+//                            }else{
+//                                NSString *storyboardId =@"MainPageVC";
+//                                
+//                                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//                                
+//                                UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+//                                UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:initViewController];
+//                                self.window.rootViewController = navController;
+//                                [self.window makeKeyAndVisible];
+//                                
+//                            }
+//                            
+//
+//                            [splashImage removeFromSuperview];
+//                        }];}
+//                );
+//    [self.window makeKeyAndVisible];
+//    
+    
+    
+    NSLog(@"%@",[_user stringForKey:@"firstName"]);
+    NSString *strLogin=[_user stringForKey:@"firstName"];
+   if( strLogin== (id)[NSNull null] ||[strLogin isEqualToString:@""]||strLogin==nil)
+    //if ([[_user objectForKey:@"firstName"] isEqualToString:@""])
+   {
+        NSString *storyboardId =@"ViewController";
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+        
+        UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:initViewController];
+       navController.navigationBar.backgroundColor=[UIColor redColor];
+       navController.navigationBar.translucent=NO;
+       navController.navigationBar.alpha=1.0;
+
+       
+        self.window.rootViewController = navController;
+        [self.window makeKeyAndVisible];
+        
+
+    }else{
+        NSString *storyboardId =@"MainPageVC";
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+        UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:initViewController];
+//        navController.navigationBar.backgroundColor=[UIColor redColor];
+//        navController.navigationBar.translucent=NO;
+//        navController.navigationBar.alpha=1.0;
+
+        self.window.rootViewController = navController;
+        [self.window makeKeyAndVisible];
+
+    }
+    
+    _strProfileimg=[UIImage imageNamed:@"gender_profile_grey.png"];
+    
     return YES;
 }
 
+-(void)removeSplash;
+{
+    [_splashView removeFromSuperview];
+    //[_splashView release];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
